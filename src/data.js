@@ -1,0 +1,1 @@
+export const title = "Korean Firing Squad"
