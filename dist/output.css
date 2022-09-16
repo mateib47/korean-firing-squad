@@ -180,3 +180,7 @@
 #root .flex {
   display: flex
 }
+
+#root .hidden {
+  display: none
+}

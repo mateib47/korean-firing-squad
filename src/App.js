@@ -8,14 +8,15 @@ import {
   Navigate,
 } from "react-router-dom";
 import { Container } from "@mui/material";
+import { Box } from "@mui/material";
 import Toolbar from "@mui/material/Toolbar";
 
 const App = () => {
   return (
     <Router>
       <TopBar />
-      <Toolbar />
-      <Container maxWidth="xl" sx={{ display: "flex", p: 3 }}>
+      <Container maxWidth={false} sx={{ display: "flex", minHeight: "100vh" }}>
+        <Toolbar />
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Home />} />

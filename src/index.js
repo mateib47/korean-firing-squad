@@ -2,11 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import { StyledEngineProvider } from "@mui/material/styles";
-import { createTheme } from "@mui/material";
 import { ThemeProvider } from "@emotion/react";
 import CssBaseline from "@material-ui/core/CssBaseline";
+import { theme } from "./theme";
 
-const theme = createTheme({});
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
