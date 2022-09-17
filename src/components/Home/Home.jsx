@@ -9,6 +9,7 @@ import Grow from "@mui/material/Grow";
 import Slide from "@mui/material/Slide";
 import { home } from "../../data";
 
+
 import { useState, useEffect } from "react";
 
 const Img = styled("img")({
@@ -26,7 +27,7 @@ const Home = () => {
   }, []);
 
   return (
-    <Box sx={{ flexGrow: 1 }} id="intro">
+    <Box sx={{ flexGrow: 1, display:"flex" }} id="intro">
       <Grid container sx={{ width: "100%", height: "100%" }}>
         <Grid
           container
@@ -49,9 +50,9 @@ const Home = () => {
                 backgroundColor: "text.default",
                 height: "auto",
                 width: "70%",
-                borderRadius: "50%",
                 display: "block",
               }}
+              disableGutters={true}
             >
               <Img src={"assets/" + home.img} />
             </Container>

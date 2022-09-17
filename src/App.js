@@ -15,7 +15,7 @@ const App = () => {
   return (
     <Router>
       <TopBar />
-      <Container maxWidth={false} sx={{ display: "flex", minHeight: "100vh" }}>
+      <Container maxWidth={false} sx={{ display: "flex", minHeight: "100vh", flexDirection:"column" }}>
         <Toolbar />
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
